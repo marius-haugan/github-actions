@@ -10,9 +10,3 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-  run-hello-world-script:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run hello-world.sh script
-        run: .github\scripts\hello-world.sh
-        shell: bash
