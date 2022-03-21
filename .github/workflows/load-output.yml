@@ -1,0 +1,16 @@
+name: Load output file
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  load-output:
+    name: Load output
+    runs-on: ubuntu-latest
+    steps:
+      - name: Load output file
+        uses: actions/download-artifact@v3
+        with:
+          name: output-log-file
