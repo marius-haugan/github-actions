@@ -8,7 +8,7 @@ view:
 - Views/**/*
 
 code-file:
-- *.cs
+- WebApplication2/*.cs
 
 view-file:
-- *.cshtml
+- WebApplication2/*.cshtml
