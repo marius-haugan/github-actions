@@ -1,0 +1,10 @@
+name: hello-world-action
+on: [push]
+jobs:
+  run-hello-world-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run hello-world.sh script
+        run: ./.github/scripts/hello-world.sh
+        shell: bash
+      
