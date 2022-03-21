@@ -1,0 +1,14 @@
+controller:
+- Controllers/**/*
+
+model:
+- Models/**/*
+
+view:
+- Views/**/*
+
+code-file:
+- *.cs
+
+view-file:
+- *.cshtml
