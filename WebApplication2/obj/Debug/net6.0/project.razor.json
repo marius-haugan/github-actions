@@ -16298,6 +16298,11 @@
   "RootNamespace": "WebApplication2",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\marius.haugan\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Test\\Index.cshtml",
+      "TargetPath": "Views\\Test\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marius.haugan\\source\\repos\\WebApplication2\\WebApplication2\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
