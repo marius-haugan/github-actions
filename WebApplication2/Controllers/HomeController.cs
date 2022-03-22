@@ -8,7 +8,7 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
-    public string Property1 { get; set; }
+    public string Property1 { get; set; } = string.Empty;
 
     public HomeController(ILogger<HomeController> logger)
     {
