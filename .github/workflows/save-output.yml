@@ -1,5 +1,4 @@
 name: Save output file
-
 on:
   push:
     branches: [ master ]
@@ -7,8 +6,7 @@ on:
     branches: [ master ]
 
 jobs:
-  save-output:
-    name: Save output
+  SaveOutput:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
