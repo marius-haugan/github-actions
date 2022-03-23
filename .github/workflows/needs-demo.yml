@@ -51,6 +51,6 @@ jobs:
 
   echo-8:
     runs-on: ubuntu-latest
-    needs: [echo-7, echo-8]
+    needs: [echo-6, echo-7]
     steps:
       - run: echo "8"
