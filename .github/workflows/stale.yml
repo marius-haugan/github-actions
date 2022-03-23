@@ -3,7 +3,7 @@ name: Detect stales
 
 on:
   schedule:
-  - cron: '5 * * * *'
+  - cron: '0 8 * * *'
 
 jobs:
   detect-stales:
