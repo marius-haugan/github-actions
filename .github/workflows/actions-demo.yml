@@ -4,9 +4,14 @@ name: GitHub Actions Demo
 on: [push]
 
 jobs:
-  explore-actions:
-
+  say-something: 
     runs-on: ubuntu-latest
+    steps:
+      - run: echo "I must say something.."
+
+  explore-actions:
+    runs-on: ubuntu-latest
+    needs: [say-something]
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
