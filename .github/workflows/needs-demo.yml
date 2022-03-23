@@ -39,10 +39,10 @@ jobs:
 
   echo-6:
     runs-on: ubuntu-latest
-    needs: [echo-4]
+    needs: [echo-5]
     steps:
       - run: echo "6"
-  
+
   echo-7:
     runs-on: ubuntu-latest
     needs: [echo-5]
@@ -51,6 +51,30 @@ jobs:
 
   echo-8:
     runs-on: ubuntu-latest
-    needs: [echo-6, echo-7]
+    needs: [echo-5]
     steps:
       - run: echo "8"
+
+  echo-9:
+    runs-on: ubuntu-latest
+    needs: [echo-6, echo-7, echo-8]
+    steps:
+      - run: echo "9"
+
+  echo-A:
+    runs-on: ubuntu-latest
+    needs: [echo-4]
+    steps:
+      - run: echo "A"
+
+  echo-B:
+    runs-on: ubuntu-latest
+    needs: [echo-4]
+    steps:
+      - run: echo "B"
+
+  echo-C:
+    runs-on: ubuntu-latest
+    needs: [echo-A, echo-B]
+    steps:
+      - run: echo "C"
