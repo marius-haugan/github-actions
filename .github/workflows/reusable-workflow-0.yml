@@ -26,7 +26,7 @@ jobs:
       output-1: ${{ steps.step-1.outputs.word-1 }}
     environment: dev
     steps:
-      - name: step-0
+      - id: step-0
         run: echo "::set-output name=word-0::daft"
       - id: step-1
         run: echo "::set-output name=word-1::punk"
