@@ -1,5 +1,5 @@
 name: Environment conditionals
-on: [workflow_dispatch]
+on: workflow_dispatch
 
 env:
   arg1: 100
