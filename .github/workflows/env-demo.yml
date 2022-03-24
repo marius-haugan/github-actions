@@ -1,0 +1,22 @@
+name: Environment demo
+on: [workflow_dispatch]
+
+env:
+  arg1: 100
+  arg2: 150
+
+jobs:
+
+  echo-arg1-if-equals-arg2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo arg1 if equals arg2
+        run: echo ${{ env.arg1 }} 
+        if: ${{ env.arg1 == env.arg2 }}
+
+  echo-arg1-if-not-equals-arg2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo arg1 if not equals arg2
+        run: echo ${{ env.arg1 }} 
+        if: ${{ env.arg1 != env.arg2 }}
