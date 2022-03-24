@@ -1,0 +1,22 @@
+name: Reusable (called) Workflow 1
+
+on: 
+  workflow_call:
+    inputs:
+      parameter-1:
+        required: true
+        type: string
+    secrets:
+      server:
+        required: true
+
+jobs:
+
+  reusable-job:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: Echo input parameter-1
+        run: echo ${{ inputs.parameter-1 }}
+      - name: Echo secret server
+        run: echo ${{ secrets.server }}
