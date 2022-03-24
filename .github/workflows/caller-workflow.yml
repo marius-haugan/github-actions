@@ -4,14 +4,14 @@ on: workflow_dispatch
 jobs:
 
   call-reusable-workflow-0:
-    uses: .github/workflows/reusable-workflow-0.yml
+    uses: ./.github/workflows/reusable-workflow-0.yml
     with: 
       parameter-0: 000
     secrets: 
       password: ${{ secrets.PASSWORD }}
 
   call-reusable-workflow-1:
-    uses: .github/workflows/reusable-workflow-1.yml
+    uses: ./.github/workflows/reusable-workflow-1.yml
     with: 
       parameter-1: "111"
     secrets: 
