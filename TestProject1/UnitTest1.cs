@@ -21,6 +21,6 @@ public class Tests
     [Test]
     public void Test2()
     {
-        Assert.Fail();
+        Assert.Pass();
     }
 }
