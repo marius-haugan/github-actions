@@ -3,3 +3,11 @@ WebApplication2/obj/Debug/net6.0/WebApplication2.assets.cache
 WebApplication2/obj/Debug/net6.0/WebApplication2.GeneratedMSBuildEditorConfig.editorconfig
 *.cache
 *.editorconfig
+TestProject1/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+TestProject1/obj/Debug/net6.0/TestProject1.AssemblyInfo.cs
+TestProject1/obj/project.assets.json
+TestProject1/obj/project.packagespec.json
+TestProject1/obj/rider.project.restore.info
+TestProject1/obj/TestProject1.csproj.nuget.dgspec.json
+TestProject1/obj/TestProject1.csproj.nuget.g.props
+TestProject1/obj/TestProject1.csproj.nuget.g.targets
