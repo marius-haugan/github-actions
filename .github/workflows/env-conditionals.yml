@@ -1,4 +1,4 @@
-name: Environment conditionals demo
+name: Environment conditionals
 on: [workflow_dispatch]
 
 env:
