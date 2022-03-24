@@ -9,14 +9,24 @@ on:
     secrets:
       password:
         required: true
+    outputs:
+      output-0:
+        description: "The first output."
+        value: ${{ jobs.reusable-job.outputs.output-0 }}
+      output-1:
+        description: "The second output."
+        value: ${{ jobs.reusable-job.outputs.output-1 }}
 
 jobs:
 
   reusable-job:
     runs-on: ubuntu-latest
+    outputs:
+      output-0: ${{ steps.step-0.outputs.word-0 }}
+      output-1: ${{ steps.step-1.outputs.word-1 }}
     environment: dev
     steps:
-      - name: Echo input parameter-0
-        run: echo ${{ inputs.parameter-0 }}
-      - name: Echo secret password
-        run: echo ${{ secrets.password }}
+      - id: step-0
+        run: echo "::set-output name=word-0::daft"
+      - id: step-1
+        run: echo "::set-output name=word-1::punk"
