@@ -1,4 +1,4 @@
-name: Needs Demo
+name: Needs demo
 on: [workflow_dispatch]
 
 jobs:
