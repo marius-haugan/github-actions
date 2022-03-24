@@ -1,9 +1,8 @@
-# .github/workflows/build.yml
 name: GitHub Actions Demo
-
 on: [push]
 
 jobs:
+
   explore-actions:
     runs-on: ubuntu-latest
     steps:

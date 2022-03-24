@@ -1,4 +1,3 @@
-# .github/workflows/stale.yml
 name: Detect stales
 
 on:
@@ -6,6 +5,7 @@ on:
   - cron: '0 8 * * *'
 
 jobs:
+
   detect-stales:
     runs-on: ubuntu-latest
     permissions:
