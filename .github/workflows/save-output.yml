@@ -1,3 +1,4 @@
+name: Save file
 on:
   push:
     branches: [master]
