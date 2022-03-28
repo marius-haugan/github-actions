@@ -1,17 +1,21 @@
+name: Caller Workflow
 on: workflow_dispatch 
 
 jobs:
+
   call-reusable-workflow-0:
     uses: ./.github/workflows/reusable-workflow-0.yml
     with: 
       parameter-0: 0
     secrets: 
       password: ${{ secrets.PASSWORD }}
+
   get-outputs-workflow-0:
     runs-on: ubuntu-latest
     needs: call-reusable-workflow-0
     steps:
       - run: echo ${{ needs.call-reusable-workflow-0.outputs.output-0 }} ${{ needs.call-reusable-workflow-0.outputs.output-1 }}
+
   call-reusable-workflow-1:
     uses: ./.github/workflows/reusable-workflow-1.yml
     with: 
