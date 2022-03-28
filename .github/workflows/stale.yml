@@ -1,17 +1,14 @@
-name: Detect stales
-
 on:
   schedule:
   - cron: '0 8 * * *'
 
 jobs:
-
   detect-stales:
     runs-on: ubuntu-latest
     permissions:
       issues: write
       pull-requests: write
-    steps:
+    steps:    
     - uses: actions/stale@v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}

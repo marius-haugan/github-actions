@@ -78,3 +78,16 @@ WebApplication2/obj/Debug/net6.0/WebApplication2.MvcApplicationPartsAssemblyInfo
 WebApplication2/obj/Debug/net6.0/WebApplication2.pdb
 WebApplication2/obj/Debug/net6.0/WebApplication2.RazorAssemblyInfo.cache
 WebApplication2/obj/Debug/net6.0/WebApplication2.RazorAssemblyInfo.cs
+*.dll
+*.pdb
+*.exe
+*.CopyComplete
+*.dll
+*.pdb
+*.cache
+*.editorconfig
+*.sentinel
+*.pdb
+*.editorconfig
+*.dll
+*.cache
